@@ -163,7 +163,6 @@ var isDesigner = john.indexOf('designer') === -1 ? 'John is not a disigner'
  : 'john is a designer';
 console.log(isDesigner);
 
-*/
 ///Objects and properties 
 
 var john = {
@@ -184,11 +183,34 @@ var john = {
 john.calcAge();
 console.log(john);
 
+///Lopps and iteration
 
+for(var i = 0; i <= 10 ; i++){
+    console.log(i);
+}
 
+var john = ['John', 'Smith', 1990, 'deigner', false];
 
+for(var i = 0; i<john.length; i++){
+    console.log(john[i]);
+}
 
+//continue and break statement
 
+var john = ['John', 'Smith', 1990, 'deigner', false,
+'blue'];
+for(var i=0; i<john.length; i++) {
+    if(typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
+*/
+
+//Looping backwards
+var john = ['John', 'Smith', 1990, 'deigner', false,
+'blue'];
+for(var i = john.length-1; i>=0; i--){
+    console.log(john[i]);
+}
 
 
 
